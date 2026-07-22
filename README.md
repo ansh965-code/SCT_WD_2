@@ -61,7 +61,7 @@ git clone https://github.com/ansh965-code/SCT_WD_2.git
 
 ## 📸 Project Screenshot
 
-![Stopwatch Web Application](screenshots/screenshot.png)
+![Stopwatch Web Application](screenshot.png)
 
 ---
 
