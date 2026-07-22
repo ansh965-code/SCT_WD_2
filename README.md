@@ -88,6 +88,12 @@ This project helped strengthen my understanding of:
 
 ---
 
+## 🌐 Live Demo
+
+🔗 https://ansh965-code.github.io/SCT_WD_2/
+
+---
+
 ## 👨‍💻 Author
 
 **Ansh Gupta**
