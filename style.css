@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    padding: 20px;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+}
+
+.stopwatch {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    flex-wrap: wrap;
+}
+
+.time-display span {
+    min-width: 50px;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+#startBtn {
+    background: #22c55e;
+}
+
+#pauseBtn {
+    background: #f59e0b;
+}
+
+#resetBtn {
+    background: #ef4444;
+}
+
+#lapBtn {
+    background: #3b82f6;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.laps {
+    background: rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.laps h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#lapList {
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+#lapList li {
+    color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: space-between;
+}
+
+#lapList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#lapList::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}
+
+#lapList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+
+    .stopwatch {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .time-display {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
